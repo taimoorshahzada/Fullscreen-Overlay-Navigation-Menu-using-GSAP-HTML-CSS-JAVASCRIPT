@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    overflow: hidden;
+
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+
+}
+.button{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    text-decoration: none;
+    color: black;
+    right: 100px;
+    font-family: 'Monument';
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    transform: translateX(-100%);
+}
+.menu .button{
+    color: white;
+
+}
+.ul{
+    position: absolute;
+    left: 20%;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: left;
+    height: 100vh;
+    flex-direction: column;
+}
+.ul li{
+    margin: 20px 0;
+    z-index: 2;
+
+}
+.ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 2s;
+    font-family: 'Monument';
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    mix-blend-mode: difference;
+
+}
+.social{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 80px;
+    width: 100%;
+
+}
+.social ul{
+    margin-left: 50px;
+    display: flex;
+
+}
+.social ul li{
+    margin: 0px 10px;
+
+}
+.social ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Monument';
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+}
+.bg{
+    position: absolute;
+    width: 250px;
+    filter: grayscale(1);
+    height: 300px;
+    mix-blend-mode: difference;
+}
+.bg1{
+    top: 45px;
+    left: 80px;
+    background: url(bg1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: 1s ease-in-out;
+}
+.bg2{
+    top: 100px;
+    left: 150px;
+    background: url(bg2.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: 1s ease-in-out;
+    
+}
+.bg3{
+    top: 250px;
+    left: 200px;
+    background: url(bg3.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: 1s ease-in-out;
+    
+}
+.bg4{
+    top: 400px;
+    left: 200px;
+    background: url(bg4.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: 1s ease-in-out;
+    
+}
+.li1:hover ~ .bg1,
+.li2:hover ~ .bg2,
+.li3:hover ~ .bg3,
+.li4:hover ~ .bg4{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: 1s ease-in-out;
+}
+.ul li a:hover{
+    transition: 2s;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-style: italic;
+}
